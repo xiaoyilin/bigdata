@@ -4,6 +4,7 @@ MAINTAINER xiaoyilin <406735078@qq.com>
 LABEL version="1.0"
 LABEL description="centos7-jdk"
 USER root
+RUN yum install -y openssh-server
 WORKDIR /usr/local
 ADD jdk1.8.0_211  jdk8u211
 ADD hadoop292  hadoop292
